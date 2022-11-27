@@ -24,3 +24,6 @@ def create_randomname_file(annotation_name:str, dir_copy: str)->None:
                 file_writer.writerow([f"{file_number[counter]}.jpg", dataset_class])
             counter += 1
 
+
+def run3(annotation_name:str, dir_copy: str)->None:
+    create_randomname_file(annotation_name, dir_copy)
