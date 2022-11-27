@@ -39,7 +39,7 @@ class IteratorTask2:
 class IteratorTask3:
     def __init__(self, class_name: str,  path: str, annotation_name: str):
         self.file_names = list()
-        with open(os.path.join(path, annotation_name), encoding='UTF-16') as file:
+        with open(os.path.join(path, annotation_name)) as file:
             reader = csv.reader(file, delimiter=',')
             for file_info in reader:
                 if file_info[1] == class_name:
