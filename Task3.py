@@ -11,8 +11,6 @@ def get_element(class_name:str)->generator:
 
 
 def create_randomname_file(annotation_name:str, dir_copy: str)->None:
-    '''This function create the copy of dataset in another directory with names which are random numbers
-    and create csv file with 2 parameters: file name(random number) and class of that file'''
     file_number = list(range(10001))
     random.shuffle(file_number)
     counter = 1
