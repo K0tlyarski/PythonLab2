@@ -20,3 +20,7 @@ def create_copy_dataset(dir_copy: str, annotation_name: str) -> None:
             file_writer = csv.writer(file, delimiter=",")
             for file_name in files_list:
                 file_writer.writerow([f"{dataset_item}_{file_name}", dataset_item])
+
+
+def run2(dir_copy: str, annotation_name: str) -> None:
+    create_copy_dataset(dir_copy, annotation_name)
