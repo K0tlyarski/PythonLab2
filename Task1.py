@@ -10,3 +10,7 @@ def create_csv_annotation(class_name: str, annotation_name: str) -> None:
         for name in class_names:
             file_writer.writerow(
                 [os.path.abspath(name), os.path.join(path_to_class, name), class_name])
+
+
+def run1(class_name: str, annotation_name: str) -> None:
+    create_csv_annotation(class_name, annotation_name)
