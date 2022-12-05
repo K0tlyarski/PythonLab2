@@ -3,6 +3,8 @@ import csv
 
 
 def create_csv_annotation(class_name: str, annotation_name: str) -> None:
+    """This function create csv annotation with 3 parameters: absolute path to file, relative path and file's class
+    name """
     path_to_class = os.path.join('dataset', class_name)
     class_names = os.listdir(path_to_class)
     with open(annotation_name, mode="w", newline='') as file:
